@@ -1,0 +1,21 @@
+{
+  "urls": [
+    [
+      "i2c_manage/i2c_bit.py",
+      "github:koraze/ESP32_librairies/carte/lib_/i2c_manage/i2c_bit.py"
+    ],
+    [
+      "i2c_manage/i2c_bits.py",
+      "github:koraze/ESP32_librairies/carte/lib_/i2c_manage/i2c_bits.py"
+    ],
+    [
+      "i2c_manage/i2c_bytes.py",
+      "github:koraze/ESP32_librairies/carte/lib_/i2c_manage/i2c_bytes.py"
+    ],
+    [
+      "i2c_manage/i2c_device.py",
+      "github:koraze/ESP32_librairies/carte/lib_/i2c_manage/i2c_device.py"
+    ]
+  ],
+  "version": "1"
+}
