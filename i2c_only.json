@@ -1,0 +1,21 @@
+{
+  "urls": [
+    [
+      "i2c_manage/i2c_bit.py",
+      "github:jposada202020/MicroPython_SHT4X/examples/sht4x_heat_time.py"
+    ],
+    [
+      "i2c_manage/i2c_bits.py",
+      "github:jposada202020/MicroPython_SHT4X/examples/sht4x_heater_power.py"
+    ],
+    [
+      "i2c_manage/i2c_bytes.py",
+      "github:jposada202020/MicroPython_SHT4X/examples/sht4x_simpletest.py"
+    ],
+    [
+      "i2c_manage/i2c_device.py",
+      "github:jposada202020/MicroPython_SHT4X/examples/sht4x_temperature_precision.py"
+    ]
+  ],
+  "version": "1"
+}
