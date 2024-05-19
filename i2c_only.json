@@ -1,20 +1,20 @@
 {
   "urls": [
     [
-      "i2c_manage/i2c_bit.py",
-      "github:Koraze/ESP32_librairies/carte/lib_/i2c_manage/i2c_bit.py"
+      "micropython_sht4x/examples/sht4x_heat_time.py",
+      "github:jposada202020/MicroPython_SHT4X/examples/sht4x_heat_time.py"
     ],
     [
-      "i2c_manage/i2c_bits.py",
-      "github:Koraze/ESP32_librairies/carte/lib_/i2c_manage/i2c_bits.py"
+      "micropython_sht4x/examples/sht4x_heater_power.py",
+      "github:jposada202020/MicroPython_SHT4X/examples/sht4x_heater_power.py"
     ],
     [
-      "i2c_manage/i2c_bytes.py",
-      "github:Koraze/ESP32_librairies/carte/lib_/i2c_manage/i2c_bytes.py"
+      "micropython_sht4x/examples/sht4x_simpletest.py",
+      "github:jposada202020/MicroPython_SHT4X/examples/sht4x_simpletest.py"
     ],
     [
-      "i2c_manage/i2c_device.py",
-      "github:Koraze/ESP32_librairies/carte/lib_/i2c_manage/i2c_device.py"
+      "micropython_sht4x/examples/sht4x_temperature_precision.py",
+      "github:jposada202020/MicroPython_SHT4X/examples/sht4x_temperature_precision.py"
     ]
   ],
   "version": "0.1"
