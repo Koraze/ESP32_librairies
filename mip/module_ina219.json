@@ -3,7 +3,7 @@
     ["i2c_devices/ina219.py",     "github:Koraze/ESP32_librairies/carte/lib_/i2c_devices/ina219.py" ]
   ],
   "deps": [
-    ["github:Koraze/ESP32_librairies/mip/i2c_only.json",  "main"] 
+    ["github:Koraze/ESP32_librairies/mip/i2c_only.json"] 
   ],
   "version": "0.1"
 }
