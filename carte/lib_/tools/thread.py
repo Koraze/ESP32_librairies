@@ -1,7 +1,3 @@
-
-Cette librairie ne renvoie le résultat de la fonction à surveiller que si elle est différente.
-
-```python
 from time     import sleep
 from tools.dt import DT
 import _thread
@@ -49,4 +45,3 @@ if __name__ == '__main__':
     exemple.start()
     sleep(6)
     exemple.stop()
-```

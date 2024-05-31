@@ -1,7 +1,3 @@
-
-Cette librairie ne renvoie le résultat de la fonction à surveiller que si elle est différente.
-
-```python
 # Cette librairie ne renvoie le résultat de la fonction à surveiller
 # que si elle est différente.
 
@@ -48,4 +44,3 @@ def exemple(pin) :
 # Un bouton poussoir sur la broche 39 (modifiable) est nécessaire ici
 if __name__ == '__main__':
     exemple(pin = 39)   # cliquez sur le bouton connecté à la broche 39
-```

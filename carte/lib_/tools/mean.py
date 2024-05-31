@@ -1,7 +1,3 @@
-
-Cette librairie ne renvoie le résultat de la fonction à surveiller que si elle est différente.
-
-```python
 from tools.thread import Thread
 
 class MEAN():
@@ -66,5 +62,3 @@ if __name__ == '__main__':
         print(moyenne.output(False))
         sleep(1)
     moyenne.stop()
-
-```

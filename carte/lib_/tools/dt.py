@@ -1,7 +1,3 @@
-
-Cette librairie permet de fixer le nombre d'exécutions par secondes
-
-```python
 # Cette librairie permet de fixer le nombre d'exécutions par secondes via ses méthodes
 # - waiting()    - bloquant
 # - remaining()  - non bloquant
@@ -61,5 +57,3 @@ def exemple_2():
 # Exemple d'utilisation
 if __name__ == '__main__':
     exemple_2()
-
-```

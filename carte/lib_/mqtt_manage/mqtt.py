@@ -1,7 +1,3 @@
-
-Cette librairie permet de simplifier l'usage des librairies [[WiFi - MQTT - fizista|MQTT de Fizista]] 
-
-```python
 from lib.umqtt.robust2 import MQTTClient
 from tools.watch       import *
 from time import sleep
@@ -143,4 +139,3 @@ if __name__ == '__main__':
     mqtt.publish("foo_sensor1", "hello world")
     mqtt.publish("foo_sensor1", '{"temperature" : %.02f}', pub_callback, 10000)
     mqtt.update_loop()
-```
