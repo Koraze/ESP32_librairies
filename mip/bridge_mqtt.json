@@ -1,0 +1,12 @@
+{
+  "urls": [
+    ["tools/dt.py",     "github:Koraze/ESP32_librairies/carte/lib_/tools/dt.py"    ],
+    ["tools/thread.py", "github:Koraze/ESP32_librairies/carte/lib_/tools/thread.py"],
+    ["tools/watch.py",  "github:Koraze/ESP32_librairies/carte/lib_/tools/watch.py" ],
+    ["bridges/mqtt.py", "github:Koraze/ESP32_librairies/carte/lib_/bridges/mqtt.py"]
+  ],
+  "deps": [
+    ["github:Koraze/ESP32_librairies/mip/external/mqtt_robust2.json", "main"] 
+  ],
+  "version": "0.1"
+}

@@ -1,5 +1,5 @@
 from random import randint
-from i2c_manage.i2c_device import RWbase
+from .i2c_device import RWbase
 
 
 class RWBits(RWbase):

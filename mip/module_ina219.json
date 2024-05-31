@@ -1,9 +1,9 @@
 {
   "urls": [
-    ["i2c_devices/ina219.py", "github:Koraze/ESP32_librairies/carte/lib_/i2c_devices/ina219.py" ]
+    ["devices_i2c/ina219.py", "github:Koraze/ESP32_librairies/carte/lib_/devices_i2c/ina219.py" ]
   ],
   "deps": [
-    ["github:Koraze/ESP32_librairies/mip/i2c_only.json", "main"] 
+    ["github:Koraze/ESP32_librairies/mip/bridge_i2c.json", "main"] 
   ],
   "version": "0.1"
 }
