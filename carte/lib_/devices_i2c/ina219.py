@@ -4,10 +4,10 @@
 
 
 from micropython import const
-from i2c_manage.i2c_bytes  import RWBytes, ROBytes
-from i2c_manage.i2c_bit    import RWBit,   ROBit
-from i2c_manage.i2c_bits   import RWBits,  ROBits
-from i2c_manage.i2c_device import I2C_device
+from bridges.i2c_bytes  import RWBytes, ROBytes
+from bridges.i2c_bit    import RWBit,   ROBit
+from bridges.i2c_bits   import RWBits,  ROBits
+from bridges.i2c_device import I2C_device
 
 # Bits
 # pylint: disable=too-few-public-methods
@@ -501,7 +501,8 @@ class INA219:
         self.mode = Mode.SANDBVOLT_CONTINUOUS
 
 
-if __name__ == '__main__':
+# Exemple d'utilisation
+def exemple():
     # SPDX-FileCopyrightText: 2021 ladyada for Adafruit Industries
     # SPDX-License-Identifier: MIT
 

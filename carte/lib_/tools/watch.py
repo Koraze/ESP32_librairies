@@ -27,7 +27,7 @@ class Watch():
             
 
 # Fonctions tests - Exemples d'usage
-def exemple(pin) :
+def exemple(pin = 39) :
     from machine  import Pin
     button_a = Pin(pin, Pin.IN)
 
@@ -38,9 +38,3 @@ def exemple(pin) :
         message = watch_pin.get_new_value() # renvoi résultat si différent
         if message :
             print(message)
-
-
-# Exemple d'utilisation
-# Un bouton poussoir sur la broche 39 (modifiable) est nécessaire ici
-if __name__ == '__main__':
-    exemple(pin = 39)   # cliquez sur le bouton connecté à la broche 39

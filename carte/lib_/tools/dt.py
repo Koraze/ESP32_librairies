@@ -53,7 +53,3 @@ def exemple_2():
         if timer.remaining() <= 0 :  # Non bloquant
             print("hello")
 
-
-# Exemple d'utilisation
-if __name__ == '__main__':
-    exemple_2()

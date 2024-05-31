@@ -1,5 +1,5 @@
-from time     import sleep
-from tools.dt import DT
+from time  import sleep
+from .dt   import DT
 import _thread
 
 
@@ -37,7 +37,7 @@ class Thread():
 
 
 # Exemple d'utilisation
-if __name__ == '__main__':
+def exemple():
     def show():
         print("hello")
         

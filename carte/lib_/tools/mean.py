@@ -1,4 +1,4 @@
-from tools.thread import Thread
+from .thread import Thread
 
 class MEAN():
     def __init__(self, dt, fct, start=True, debug=False):
@@ -40,7 +40,8 @@ class MEAN():
             print(data, self.__value)
 
 
-if __name__ == '__main__':
+# Exemple d'utilisation
+def exemple():
     from time import sleep
     
     count = 0

@@ -55,7 +55,8 @@ class ROBits(RWBits):
         raise AttributeError()
 
 
-if __name__ == '__main__':
+# Exemple d'utilisation
+def exemple():
     class Test:
         value = RWBits(None, 5, nb_bits=4, nb_bytes=2, lsb_first=False)
     

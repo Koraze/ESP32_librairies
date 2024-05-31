@@ -4,10 +4,10 @@
 
 
 from micropython import const
-from i2c_manage.i2c_bytes  import RWBytes, ROBytes
-from i2c_manage.i2c_bit    import RWBit,   ROBit
-from i2c_manage.i2c_bits   import RWBits
-from i2c_manage.i2c_device import I2C_device
+from bridges.i2c_bytes  import RWBytes, ROBytes
+from bridges.i2c_bit    import RWBit,   ROBit
+from bridges.i2c_bits   import RWBits
+from bridges.i2c_device import I2C_device
 
 
 MAX1704X_I2CADDR_DEFAULT = const(0x36)  # Default I2C address
@@ -206,10 +206,11 @@ class MAX17048:
 
         self._hibrt_hibthr = 0
         self._hibrt_actthr = 0
-    
-    
 
-if __name__ == '__main__':
+
+
+# Exemple d'utilisation
+def exemple():
     from time    import sleep
     from machine import Pin, I2C
     

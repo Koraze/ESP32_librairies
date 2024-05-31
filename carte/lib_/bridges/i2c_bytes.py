@@ -41,7 +41,8 @@ class ROBytes(RWBytes):
         raise AttributeError()
 
 
-if __name__ == '__main__':
+# Exemple d'utilisation
+def exemple():
     class Test:
         value = RWBytes(None, ">H")
     

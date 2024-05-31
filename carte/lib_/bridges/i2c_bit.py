@@ -37,7 +37,8 @@ class ROBit(RWBit):
         raise AttributeError()
 
 
-if __name__ == '__main__':
+# Exemple d'utilisation
+def exemple():
     class Test:
         value = RWBit(None, 3, nb_bytes = 2)
     

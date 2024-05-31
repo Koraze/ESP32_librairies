@@ -1,5 +1,9 @@
-from lib.umqtt.robust2 import MQTTClient
-from tools.watch       import *
+try :
+    from deps.robust2  import MQTTClient
+except : 
+    from umqtt.robust2 import MQTTClient
+
+from tools.watch  import *
 from time import sleep
 
 
@@ -113,7 +117,7 @@ class MQTT_Client():
 
 
 # Exemple d'utilisation
-if __name__ == '__main__':
+def exemple():
     import random
     from config import iot_name, host, port
     
