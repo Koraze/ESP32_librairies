@@ -1,0 +1,9 @@
+{
+  "urls": [
+    ["i2c_devices/max17048.py", "github:Koraze/ESP32_librairies/carte/lib_/i2c_devices/max17048.py" ]
+  ],
+  "deps": [
+    ["github:Koraze/ESP32_librairies/mip/i2c_only.json", "main"] 
+  ],
+  "version": "0.1"
+}
