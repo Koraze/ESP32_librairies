@@ -1,6 +1,7 @@
 {
   "urls": [
-    ["bridges/i2c_bit.py",     "github:Koraze/ESP32_librairies/carte/lib_/bridges/i2c_bit.py" ],
+    ["bridges/__init__.py",    "github:Koraze/ESP32_librairies/carte/lib_/bridges/__init__.py"],
+    ["bridges/i2c_bit.py",     "github:Koraze/ESP32_librairies/carte/lib_/bridges/i2c_bit.py"],
     ["bridges/i2c_bits.py",    "github:Koraze/ESP32_librairies/carte/lib_/bridges/i2c_bits.py"],
     ["bridges/i2c_bytes.py",   "github:Koraze/ESP32_librairies/carte/lib_/bridges/i2c_bytes.py"],
     ["bridges/i2c_device.py",  "github:Koraze/ESP32_librairies/carte/lib_/bridges/i2c_device.py"]
