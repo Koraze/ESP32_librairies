@@ -6,7 +6,7 @@ Installez le microgiciel micropython correspondant à votre carte dans cette der
 - Dans le dossier `firmware` de ce répertoire (pas forcément à jour)
 - Dans le site officiel [micropython](https://micropython.org) 
 
-\\
+<br>
 
 # Connexion à votre borne WiFi
 
@@ -18,7 +18,7 @@ Une fois le microgiciel installé et la carte redémarrée :
    - Remplacez `WIFI_CONNECT = False` par `WIFI_CONNECT = True`
 4. Redémarrez la carte
 
-\\
+<br>
 
 # Librairies MicroPython
 
