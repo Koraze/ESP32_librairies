@@ -48,7 +48,7 @@ def replace_tabs_with_spaces(directory, spaces=4, backup=False, extension=(".py"
 
     # Afficher les fichiers erronés
     print()
-    print("Fichiers générant des erreurs:")
+    print("Fichiers impossibles à visiter:")
     for file in error_files:
         print(file)
 
