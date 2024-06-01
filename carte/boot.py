@@ -13,25 +13,24 @@ from config   import *
 def scan():
     print()
     available = station.scan()
-    print("routeurs visibles proches")
+    print("Wifi : routeurs visibles proches")
     if len(available) == 0 :
-        print("None")
+        print("- None")
     else :
         for i in available :
-            print("  - ", i)
+            print("- ", i)
 
     
 # Fonction : Comportement si connecté
 def connected() :
     if station.isconnected() == True:
-        print("Connexion etablie")
-        print("  - ", hostname, *station.ifconfig())
         return True
     return False
 
 
 # Fonction : déconnexion
 def disconnect():
+    print("Wifi : Deconnexion ...")
     if connected() :
         station.disconnect()
     station.active(False)
@@ -41,7 +40,6 @@ def disconnect():
 def connect(routeurs=WIFI_ROUTEURS):
     # Activation du WiFi
     station.active(True)
-    print()
     
     # Si déjà connecté
     if connected():
@@ -67,7 +65,7 @@ def connect(routeurs=WIFI_ROUTEURS):
                 return True
         
         # Connexion et attente
-        print("Connexion a", ssid, "...", end="")
+        print("\nWifi : Connexion a", ssid, "...", end="")
         station.connect(ssid, mdp)
         for i in range(10):
             sleep(1) # élément bloquant
@@ -75,23 +73,39 @@ def connect(routeurs=WIFI_ROUTEURS):
             
             # Si connexion établie
             if connected() :
+                print()
                 return True
             
     # Si aucune connexion n'est établie
-    print("Connexion impossible")
+    print("\nWifi : Connexion impossible ...")
 
 
-########### Partie a modifier ########### 
-station  = WLAN(STA_IF)    # Création de l'objet "Station Wi-Fi"
+# Lancement de l'ensemble
+station  = WLAN(STA_IF)            # Création de l'objet "Station Wi-Fi"
 hostname = 'esp32-' + ESP32_ID[8:]
 
-if WIFI_CONNECT :
-    station.active(True)  # Activation du WiFi
-    station.config(dhcp_hostname = hostname)
-    scan()                # Scan des routeurs proches
-    connect()             # Connexion aux routeurs indiqués dans "routeurs"
-    if REPL_CONNECT :
-        import webrepl
-        webrepl.start()
-else :
-    disconnect()          # Deconnexion
+Data = """
+Wifi :
+- url  : {}.local
+- ip   : {}
+- mask : {}
+- gw   : {}
+- dns  : {}
+
+webrepl : {}
+"""
+
+def config_wifi():
+    if WIFI_CONNECT :
+        station.active(True)  # Activation du WiFi
+        station.config(dhcp_hostname = hostname)
+        scan()                # Scan des routeurs proches
+        connect()             # Connexion aux routeurs indiqués dans "routeurs"
+        if REPL_CONNECT :
+            import webrepl
+            webrepl.start()
+        print(Data.format(hostname, *station.ifconfig(), REPL_CONNECT))
+    else :
+        disconnect()          # Deconnexion
+
+config_wifi()
