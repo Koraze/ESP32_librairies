@@ -1,8 +1,8 @@
 {
   "urls": [
-    ["deps/umqtt", "github:fizista/micropython-umqtt.simple2/src_minimized/umqtt/simple2.py" ],
-    ["deps/umqtt", "github:fizista/micropython-umqtt.robust2/src_minimized/umqtt/robust2.py" ],
-    ["deps/umqtt", "github:fizista/micropython-umqtt.simple2/src_minimized/umqtt/__init__.py"],
+    ["deps/umqtt/simple2.py",  "github:fizista/micropython-umqtt.simple2/src_minimized/umqtt/simple2.py" ],
+    ["deps/umqtt/robust2.py",  "github:fizista/micropython-umqtt.robust2/src_minimized/umqtt/robust2.py" ],
+    ["deps/umqtt/__init__.py", "github:fizista/micropython-umqtt.simple2/src_minimized/umqtt/__init__.py"],
   ],
   "version": "0.1"
 }
