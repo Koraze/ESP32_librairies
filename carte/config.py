@@ -6,16 +6,11 @@ WIFI_ROUTEURS = {
     'SSID_1' : ['motdepasse', 'ip', 'masque', 'passerelle', 'dns'],
     'SSID_2' : ['motdepasse'],
 }
-WIFI_CONNECT  = False
-REPL_CONNECT  = False
+WIFI_CONNECT = True
+REPL_CONNECT = False
 
 # Parametres broker MQTT
-ha_mqtt_port = 
-ha_mqtt_name = 
-ha_mqtt_user = 
-ha_mqtt_pw   = 
-
-def ha_mqtt_find_ip():
-    import usocket
-    ip = usocket.getaddrinfo('....local', 0)
-    return ip[0][4][0]
+MQTT_HOST = None
+MQTT_PORT = None
+MQTT_USER = None
+MQTT_PW   = None
