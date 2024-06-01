@@ -1,5 +1,6 @@
 {
   "urls": [
+    ["deps/umqtt/simple2.py",  "github:fizista/micropython-umqtt.simple2/master/src_minimized/umqtt/simple2.py" ],
     ["deps/umqtt/robust2.py",  "github:fizista/micropython-umqtt.robust2/master/src_minimized/umqtt/robust2.py" ],
     ["deps/umqtt/__init__.py", "github:fizista/micropython-umqtt.simple2/master/src_minimized/umqtt/__init__.py"],
   ],
