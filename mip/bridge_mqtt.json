@@ -9,7 +9,7 @@
     ["bridges/mqtt.py",     "github:Koraze/ESP32_librairies/carte/lib_/bridges/mqtt.py"]
   ],
   "deps": [
-    ["github:Koraze/ESP32_librairies/mip/external/mqtt_robust2.json", "main"] 
+    ["github:Koraze/ESP32_librairies/mip/external/mqtt_robust2.json", "master"] 
   ],
   "version": "0.1"
 }
