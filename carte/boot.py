@@ -1,3 +1,3 @@
-from bridges.boot_config import config_wifi
+from wifi import config_wifi
 
 config_wifi()
