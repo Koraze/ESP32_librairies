@@ -11,7 +11,7 @@ Installez le microgiciel micropython correspondant à votre carte dans cette der
 # Connexion à votre borne WiFi
 
 Une fois le microgiciel installé et la carte redémarrée :
-1. Créez à la racine de votre carte les fichiers `boot.py` et `config.py`
+1. Créez à la racine de votre carte les fichiers `boot.py`, `config.py`, et `wifi.py`
 2. Copiez-y le contenu des fichiers de même nom dans le dossier `carte`
 3. Adaptez le contenu de `config.py` :
    - Renseignez dans `WIFI_ROUTEURS` les paramètres de votre borne WiFi
