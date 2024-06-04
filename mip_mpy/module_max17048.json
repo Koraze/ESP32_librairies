@@ -2,11 +2,11 @@
     "urls": [
         [
             "devices_i2c/max17048.mpy",
-            "github:Koraze/ESP32_librairies/carte/lib_/devices_i2c/max17048.mpy"
+            "github:Koraze/ESP32_librairies/carte_mpy/lib_/devices_i2c/max17048.mpy"
         ],
         [
             "devices_i2c/__init__.py",
-            "github:Koraze/ESP32_librairies/carte/lib_/devices_i2c/__init__.py"
+            "github:Koraze/ESP32_librairies/carte_mpy/lib_/devices_i2c/__init__.py"
         ]
     ],
     "deps": [

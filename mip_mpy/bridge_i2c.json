@@ -2,27 +2,27 @@
     "urls": [
         [
             "__init__.py",
-            "github:Koraze/ESP32_librairies/carte/lib_/__init__.py"
+            "github:Koraze/ESP32_librairies/carte_mpy/lib_/__init__.py"
         ],
         [
             "bridges/__init__.py",
-            "github:Koraze/ESP32_librairies/carte/lib_/bridges/__init__.py"
+            "github:Koraze/ESP32_librairies/carte_mpy/lib_/bridges/__init__.py"
         ],
         [
             "bridges/i2c_bit.mpy",
-            "github:Koraze/ESP32_librairies/carte/lib_/bridges/i2c_bit.mpy"
+            "github:Koraze/ESP32_librairies/carte_mpy/lib_/bridges/i2c_bit.mpy"
         ],
         [
             "bridges/i2c_bits.mpy",
-            "github:Koraze/ESP32_librairies/carte/lib_/bridges/i2c_bits.mpy"
+            "github:Koraze/ESP32_librairies/carte_mpy/lib_/bridges/i2c_bits.mpy"
         ],
         [
             "bridges/i2c_bytes.mpy",
-            "github:Koraze/ESP32_librairies/carte/lib_/bridges/i2c_bytes.mpy"
+            "github:Koraze/ESP32_librairies/carte_mpy/lib_/bridges/i2c_bytes.mpy"
         ],
         [
             "bridges/i2c_device.mpy",
-            "github:Koraze/ESP32_librairies/carte/lib_/bridges/i2c_device.mpy"
+            "github:Koraze/ESP32_librairies/carte_mpy/lib_/bridges/i2c_device.mpy"
         ]
     ],
     "version": "0.1"

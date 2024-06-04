@@ -45,11 +45,10 @@ def convert_json_into_mpy(source, dest):
                     contenu = json.load(file_open)
                     for i in range(len(contenu["urls"])) :
                         if contenu["urls"][i][0].endswith(".py") :
+                            contenu["urls"][i][1] = "github:Koraze/ESP32_librairies/carte_mpy/lib_/" + contenu["urls"][i][0]
                             if not contenu["urls"][i][0].endswith("__init__.py") :
                                 contenu["urls"][i][0] = contenu["urls"][i][0][:-2] + "mpy"
                                 contenu["urls"][i][1] = contenu["urls"][i][1][:-2] + "mpy"
-                            if root == dest + '\external' :
-                                contenu["urls"][i][1] = "github:Koraze/ESP32_librairies/carte/lib_/carte/" + contenu["urls"][i][0]
                             # contenu["urls"] = remplacer_sous_chaines(contenu["urls"])
                             # print(json.dumps(contenu))
                 with open(file_path, 'w', encoding='utf-8') as file_open:

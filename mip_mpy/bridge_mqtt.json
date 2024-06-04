@@ -2,31 +2,31 @@
     "urls": [
         [
             "__init__.py",
-            "github:Koraze/ESP32_librairies/carte/lib_/__init__.py"
+            "github:Koraze/ESP32_librairies/carte_mpy/lib_/__init__.py"
         ],
         [
             "tools/__init__.py",
-            "github:Koraze/ESP32_librairies/carte/lib_/tools/__init__.py"
+            "github:Koraze/ESP32_librairies/carte_mpy/lib_/tools/__init__.py"
         ],
         [
             "tools/dt.mpy",
-            "github:Koraze/ESP32_librairies/carte/lib_/tools/dt.mpy"
+            "github:Koraze/ESP32_librairies/carte_mpy/lib_/tools/dt.mpy"
         ],
         [
             "tools/thread.mpy",
-            "github:Koraze/ESP32_librairies/carte/lib_/tools/thread.mpy"
+            "github:Koraze/ESP32_librairies/carte_mpy/lib_/tools/thread.mpy"
         ],
         [
             "tools/watch.mpy",
-            "github:Koraze/ESP32_librairies/carte/lib_/tools/watch.mpy"
+            "github:Koraze/ESP32_librairies/carte_mpy/lib_/tools/watch.mpy"
         ],
         [
             "bridges/__init__.py",
-            "github:Koraze/ESP32_librairies/carte/lib_/bridges/__init__.py"
+            "github:Koraze/ESP32_librairies/carte_mpy/lib_/bridges/__init__.py"
         ],
         [
             "bridges/mqtt.mpy",
-            "github:Koraze/ESP32_librairies/carte/lib_/bridges/mqtt.mpy"
+            "github:Koraze/ESP32_librairies/carte_mpy/lib_/bridges/mqtt.mpy"
         ]
     ],
     "deps": [
