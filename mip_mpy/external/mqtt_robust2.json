@@ -1,0 +1,17 @@
+{
+    "urls": [
+        [
+            "deps/umqtt/simple2.mpy",
+            "github:Koraze/ESP32_librairies/carte/lib_/carte/deps/umqtt/simple2.mpy"
+        ],
+        [
+            "deps/umqtt/robust2.mpy",
+            "github:Koraze/ESP32_librairies/carte/lib_/carte/deps/umqtt/robust2.mpy"
+        ],
+        [
+            "deps/umqtt/__init__.py",
+            "github:Koraze/ESP32_librairies/carte/lib_/carte/deps/umqtt/__init__.py"
+        ]
+    ],
+    "version": "0.1"
+}

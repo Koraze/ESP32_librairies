@@ -118,25 +118,28 @@ class MQTT_Client():
 
 # Exemple d'utilisation
 def exemple():
-    from random import getrandbits
-    from config import MQTT_NAME, MQTT_HOST, MQTT_PORT, MQTT_USER, MQTT_PW
+    import random
+    from config import iot_name, host, port
     
     def pub_callback():
-        temperature = 20 + 0.5*getrandbits(3)
+        global temperature
+        delta = random.uniform(-1, 2)
+        temperature = temperature + 0.1*delta
         temperature = round(temperature, 2)
         return temperature
     
     def sub_callback(topic, msg):
-        print(msg, "world !")
+        print("world !")
     
+    temperature = 20
     print(f"Température aléatoire : {pub_callback()}°C")
 
-    mqtt = MQTT_Client(MQTT_NAME, MQTT_HOST, MQTT_PORT)
+    mqtt = MQTT_Client(iot_name, host, port)
     mqtt.connect()
     mqtt.update_delai(200)
     mqtt.update()
-    mqtt.subscribe("foo_sensor1")
-    mqtt.subscribe("foo_sensor2", sub_callback)
-    mqtt.publish("foo_sensor2", "hello")
+    mqtt.subscribe("foo_command1")
+    mqtt.subscribe("foo_command2", sub_callback)
+    mqtt.publish("foo_sensor1", "hello world")
     mqtt.publish("foo_sensor1", '{"temperature" : %.02f}', pub_callback, 10000)
     mqtt.update_loop()
