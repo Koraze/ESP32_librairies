@@ -6,13 +6,13 @@ import shutil
 
 
 # Fonction pour remplacer récursivement dans toutes les chaînes
-def remplacer_sous_chaines(donnees, ancien='.py', nouveau = '.mpy'):
+def remplacer_sous_chaines(donnees, ancien, nouveau):
     if isinstance(donnees, str):
         return re.sub(ancien, nouveau, donnees)
     elif isinstance(donnees, dict):
-        return {k: remplacer_sous_chaines(v) for k, v in donnees.items()}
+        return {k: remplacer_sous_chaines(v, ancien, nouveau) for k, v in donnees.items()}
     elif isinstance(donnees, list):
-        return [remplacer_sous_chaines(element) for element in donnees]
+        return [remplacer_sous_chaines(v, ancien, nouveau) for v in donnees]
     else:
         return donnees
 
@@ -43,14 +43,18 @@ def convert_json_into_mpy(source, dest):
                 print(file)
                 with open(file_path, 'r', encoding='utf-8') as file_open:
                     contenu = json.load(file_open)
-                    for i in range(len(contenu["urls"])) :
-                        if contenu["urls"][i][0].endswith(".py") :
-                            contenu["urls"][i][1] = "github:Koraze/ESP32_librairies/carte_mpy/lib_/" + contenu["urls"][i][0]
-                            if not contenu["urls"][i][0].endswith("__init__.py") :
-                                contenu["urls"][i][0] = contenu["urls"][i][0][:-2] + "mpy"
-                                contenu["urls"][i][1] = contenu["urls"][i][1][:-2] + "mpy"
-                            # contenu["urls"] = remplacer_sous_chaines(contenu["urls"])
-                            # print(json.dumps(contenu))
+                    if "urls" in contenu :
+                        for i in range(len(contenu["urls"])) :
+                            if contenu["urls"][i][0].endswith(".py") :
+                                contenu["urls"][i][1] = "github:Koraze/ESP32_librairies/carte_mpy/lib_/" + contenu["urls"][i][0]
+                                if not contenu["urls"][i][0].endswith("__init__.py") :
+                                    contenu["urls"][i][0] = contenu["urls"][i][0][:-2] + "mpy"
+                                    contenu["urls"][i][1] = contenu["urls"][i][1][:-2] + "mpy"
+                                # contenu["urls"] = remplacer_sous_chaines(contenu["urls"])
+                                # print(json.dumps(contenu))
+                    if "deps" in contenu :
+                        contenu["deps"] = remplacer_sous_chaines(contenu["deps"], ancien='mip', nouveau='mip_mpy')
+                        
                 with open(file_path, 'w', encoding='utf-8') as file_open:
                     json.dump(contenu, file_open, ensure_ascii=False, indent=4)
 

@@ -11,7 +11,7 @@
     ],
     "deps": [
         [
-            "github:Koraze/ESP32_librairies/mip/bridge_i2c.json",
+            "github:Koraze/ESP32_librairies/mip_mpy/bridge_i2c.json",
             "main"
         ]
     ],
